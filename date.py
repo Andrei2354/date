@@ -50,9 +50,8 @@ class Date:
 
     @property
     def weekday(self) -> int:
-        '''Día de la semana de la fecha (0 para domingo, ..., 6 para sábado).'''
-        days = self.get_delta_days()%7
-        return (days + 1 ) % 7
+        ...
+   
 
     @property
     def is_weekend(self) -> bool:
@@ -87,6 +86,3 @@ class Date:
     def __eq__(self, other) -> bool:
         ...
 
-if __name__ == "__main__":
-    pass
-    #aqui va un código de prueba
